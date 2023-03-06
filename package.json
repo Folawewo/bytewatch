@@ -23,7 +23,7 @@
   "dependencies": {
     "@babel/preset-env": "^7.20.2",
     "babel-jest": "^29.4.3",
-    "chalk": "^5.2.0",
+    "chalk": "4.1.2",
     "ts-jest": "^29.0.5"
   },
   "devDependencies": {
