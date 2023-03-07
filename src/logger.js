@@ -5,9 +5,9 @@ class ByteWatch {
     this.level = options.level || "info";
   }
 
-  log(message, level = "info") {    
-    console.log( this.getColorFn(level)(this.formatMessage(message, level)) )
-    return
+  log(message, level = "info") {
+    console.log(this.getColorFn(level)(this.formatMessage(message, level)));
+    return;
   }
 
   isLevelEnabled(level) {
@@ -18,7 +18,7 @@ class ByteWatch {
 
   /**
    * @Desc This function sets the colour needed for the log message
-   * @param {level} level 
+   * @param {level} level
    * @returns function( (message, level) => [string] )
    */
   getColorFn(level) {
@@ -38,9 +38,9 @@ class ByteWatch {
 
   /**
    * @Desc This function formate the log message
-   * @param {log message} message 
-   * @param {level:string} level 
-   * @returns 
+   * @param {log message} message
+   * @param {level:string} level
+   * @returns
    */
   formatMessage(message, level) {
     return `[${level.toUpperCase()}] ${message}`;

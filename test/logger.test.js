@@ -7,6 +7,7 @@ describe('ByteWatch', () => {
     logger = new ByteWatch({ level: levels.info });
   });
 
+// Tests
   test('should log messages with the correct level', () => {
     const logSpy = jest.spyOn(console, 'log').mockImplementation();
     logger.error('Error message');
