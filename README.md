@@ -11,23 +11,23 @@ npm install bytewatch
 ## Usage
 
 To use the logger, create an instance of **`ByteWatch`** and call one of its logging methods (
-**`error`**, **`warn`**, **`info`**, **`debug`**) with a message string. The logger will output the message to the console with the appropriate log level and color.
+  **`error`**, **`warn`**, **`info`**, **`debug`**) with a message string. The logger will output the message to the console with the appropriate log level and color.
 
 ```javascript
-const { ByteWatch } = require("bytewatch");
+const { ByteWatch } = require('bytewatch');
 
-const logger = new ByteWatch({ level: "info" });
+const logger = new ByteWatch({ level: 'info' });
 
-logger.error("An error occurred");
-logger.warn("This is a warning");
-logger.info("Some information");
-logger.debug("Debugging message");
+logger.error('An error occurred');
+logger.warn('This is a warning');
+logger.info('Some information');
+logger.debug('Debugging message');
 ```
 
 You can also set the log **`level`** at runtime by changing the level property of the **`ByteWatch`** instance.
 
 ```javascript
-logger.level = "debug";
+logger.level = 'debug';
 ```
 
 By default, the logger will only output messages at or above the set log level. For example, if the log level is set to `info`, the logger will output messages with the `info` and `error` levels, but not messages with the `warn` or `debug` levels.
@@ -40,7 +40,7 @@ Creates a new instance of the logger with the specified options.
 
 Options
 
-- **`level`** (string): The log level to use. Defaults to `info`.
+* **`level`** (string): The log level to use. Defaults to `info`.
 
 ### `ByteWatch#error(message)`
 
@@ -72,7 +72,7 @@ Formats the log message with the specified log level.
 
 ### `ByteWatch.levels`
 
-An array of supported log levels: 'error', 'warn', 'info', 'debug'
+An array of supported log levels: ```'error', 'warn', 'info', 'debug'```
 
 ## Testing
 
